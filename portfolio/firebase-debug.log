@@ -1,0 +1,39 @@
+[debug] [2018-04-17T16:26:36.182Z] ----------------------------------------------------------------------
+[debug] [2018-04-17T16:26:36.185Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-04-17T16:26:36.185Z] CLI Version:   3.18.4
+[debug] [2018-04-17T16:26:36.185Z] Platform:      darwin
+[debug] [2018-04-17T16:26:36.185Z] Node Version:  v8.9.4
+[debug] [2018-04-17T16:26:36.185Z] Time:          Tue Apr 17 2018 11:26:36 GMT-0500 (CDT)
+[debug] [2018-04-17T16:26:36.185Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-17T16:26:36.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-17T16:26:36.197Z] > authorizing via signed-in user
+[debug] [2018-04-17T16:26:36.199Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-17T16:26:36.199Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/YHm0YBGmtAw_R9ziWA1dRCjl8KG7PNpbzBXzxG7kcZM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Apr 17 2018 11:26:36 GMT-0500 (CDT)
+[debug] [2018-04-17T16:26:36.311Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-17T16:26:36.319Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-1e625  
+  
+ Tue Apr 17 2018 11:26:36 GMT-0500 (CDT)
+[debug] [2018-04-17T16:26:36.921Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-17T16:26:36.922Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-1e625/tokens  
+  
+ Tue Apr 17 2018 11:26:36 GMT-0500 (CDT)
+[debug] [2018-04-17T16:26:37.329Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-1e625'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing portfolio directory for upload...
+[debug] [2018-04-17T16:26:37.989Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-1e625/uploads/-LAJQU-zl8bk0nwaLi52?fileCount=95&message=  
+  
+ Tue Apr 17 2018 11:26:37 GMT-0500 (CDT)
+[debug] [2018-04-17T16:26:39.900Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-17T16:26:39.900Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 95 files uploaded successfully
+[debug] [2018-04-17T16:26:40.816Z] [hosting] deploy completed after 3294ms
